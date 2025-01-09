@@ -1,0 +1,163 @@
+/* settings */
+@layer iucunda {
+  @font-face {
+    font-family: "Fuzzy Bubbles";
+    src: url("../Fonts/FuzzyBubbles-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Fuzzy Bubbles";
+    src: url("../Fonts/FuzzyBubbles-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/Roboto-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/Roboto-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/Roboto-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/Roboto-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/Roboto-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../Fonts/Roboto-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --clr-brand--primary: oklch(0.681 0.3 334.95);
+    --clr-brand--secondary: oklch(0.868 0.28 140.74);
+    --clr-brand--tertiary: oklch(0.752 0.13 219.23);
+    --clr-brand--quaternary: oklch(0.2 0 0);
+    --border-radius: 0.5rem;
+    --clr-text: var(--clr-bw-020);
+    --clr-h: var(--clr-bw-020);
+    --clr-background: var(--clr-bw-090);
+    --clr-background-accent: var(--clr-bw-070);
+    --clr-background-brandcolor: var(--clr-brand--tertiary);
+    --clr-h--border: var(--clr-brand--secondary);
+    --clr-footerbg: oklch(from var(--clr-brand--tertiary) calc(l * .8) calc(c * 0.5) h);
+    /* fontfaces */
+    --ff: "Roboto";
+    --ff-condensed: "Roboto";
+    --ff-serif: "Roboto";
+    --ff-h: "Fuzzy Bubbles";
+    --ff-nav: "Roboto";
+    --ff-mono: "Roboto";
+    --ff-symbol: "Symbols";
+    --clr-headerbg: transparent;
+    --clr-logobg: transparent;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --clr-brand--primary: oklch(0.381 0.3 334.95);
+      --clr-brand--secondary: oklch(0.468 0.28 140.74);
+      --clr-brand--tertiary: oklch(0.552 0.13 219.23);
+      /* buttons */
+      --clr-primarybtn--active: var(--clr-bw-075);
+      --clr-primarybtnbg--active: var(--clr-brand--primary);
+      --clr-primarybtn--disabled: oklch(from var(--clr-primarybtn--active) calc(l + .5) calc(c * 0.5) h);
+      --clr-input--bg: var(--clr-bw-070);
+      /* typographic colors */
+      --clr-text: var(--clr-bw-090);
+      --clr-h: var(--clr-bw-090);
+      --clr-background: var(--clr-bw-030);
+      --clr-background-accent: var(--clr-bw-070);
+      --clr-background-brandcolor: oklch(from var(--clr-brand--tertiary) calc(l * .8) calc(c * 0.5) h);
+      --clr-footerbg: oklch(from var(--clr-brand--tertiary) calc(l * .8) calc(c * 0.5) h);
+    }
+  }
+  main {
+    margin-top: 0;
+  }
+  .h2 {
+    margin-block-start: 0.25em;
+    border-block-end: 0;
+  }
+  .section-hero .hero-overlay,
+  .section-hero-small .hero-small-overlay {
+    justify-content: end;
+  }
+  .section-hero img {
+    height: 70svh;
+  }
+  .section-hero-small img {
+    height: 40svh;
+  }
+  .logo {
+    padding: 0.25rem 0 0 0;
+    width: min(250px, 40vw);
+  }
+  .hamburger-menu svg {
+    background-color: oklch(20% 0 0deg / 0.8);
+    overflow: clip;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .nav-main {
+    background: oklch(20% 0 0deg / 0.8);
+    overflow: clip;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .navsubmenu--card {
+    text-align: center;
+    box-shadow: 0.25rem 0.25rem 0.5rem oklch(from var(--_card--btnbg-color) calc(l * 0.5) c h/0.5);
+  }
+  .navsubmenu--card .gallery {
+    justify-content: center;
+  }
+  .navsubmenu--card .gallery figure {
+    --_svg-color: var(--_card--btnbg-color);
+    padding-block-start: 1rem;
+  }
+  .navsubmenu--card .gallery figure img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .navsubmenu--card:nth-child(1) {
+    --_card--btnbg-color: var(--clr-brand--primary);
+  }
+  .navsubmenu--card:nth-child(2) {
+    --_card--btnbg-color: var(--clr-brand--secondary);
+    --_card--btn-color: var(--clr-text);
+  }
+  .navsubmenu--card:nth-child(3) {
+    --_card--btnbg-color: var(--clr-brand--tertiary);
+    --_card--btn-color: var(--clr-text);
+  }
+}
+
+/*# sourceMappingURL=iucundaLayout.css.map */

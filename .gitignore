@@ -1,0 +1,15 @@
+.DS_Store
+.build/
+.ddev/
+.git/
+.idea/
+bin/
+Build/
+config/
+packages/
+var/
+composer.lock
+package.json
+package-lock.json
+LICENSE
+README.md

@@ -1,0 +1,10 @@
+# default settings, should be overwritten
+
+TCEpage:
+  author: 'iucunda'
+  author_email: info@iucunda.ch
+  author_phone: '+41790000000'
+  org_name: 'iucunda'
+  org_logo: 'EXT:iucunda/Resources/Public/Images/logo.svg'
+
+# Das ist ein Test
