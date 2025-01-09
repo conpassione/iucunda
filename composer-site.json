@@ -37,7 +37,7 @@
 	},
 	"config": {
 		"vendor-dir": "vendor",
-		"bin-dir": "bin",
+		"bin-dir": "vendor/bin",
 		"sort-packages": true,
 		"allow-plugins": {
 			"typo3/class-alias-loader": true,
@@ -57,7 +57,7 @@
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "iucunda",
-			"web-dir": ".build/public"
+			"web-dir": "public"
 		},
 		"helhum/dotenv-connector": {
 			"env-file": ".env",
