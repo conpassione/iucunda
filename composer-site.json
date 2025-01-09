@@ -1,0 +1,67 @@
+{
+	"name": "conpassione/iucundacanis",
+	"type": "typo3-cms-extension",
+	"description": "TYPO3 Site for Iucunda Canis by conPassione gmbh",
+	"keywords": [
+		"TYPO3",
+		"TYPO3 Extension",
+		"typo3-cms-extension",
+		"iucunda canis"
+	],
+	"homepage": "https://www.conpassione.ch/",
+	"authors": [
+		{
+			"name": "Renzo Bauen, conPassione gmbh",
+			"email": "info@conpassione.ch"
+		}
+	],
+	"license": "GPL-2.0-or-later",
+	"minimum-stability": "dev",
+	"prefer-stable" : true,
+	"require": {
+		"conpassione/iucunda": "*",
+		"typo3/cms-core": "^13"
+	},
+	"require-dev": {
+		"typo3/testing-framework": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Conpassione\\iucundacanis\\": "Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Conpassione\\iucundacanis\\Tests\\": "Tests"
+		}
+	},
+	"config": {
+		"vendor-dir": "vendor",
+		"bin-dir": "bin",
+		"sort-packages": true,
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true,
+			"helhum/dotenv-connector": true
+		}
+	},
+	"repositories": [
+		{
+			"type": "path",
+			"url": "packages/*",
+			"options": {
+				"symlink": true
+			}
+		}
+	],
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "iucunda",
+			"web-dir": ".build/public"
+		},
+		"helhum/dotenv-connector": {
+			"env-file": ".env",
+			"adapter": "Helhum\\DotEnvConnector\\Adapter\\SymfonyDotEnv"
+		}
+	}
+}
