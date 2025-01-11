@@ -80,7 +80,9 @@
     --clr-background-brandcolor: var(--clr-brand--tertiary);
     --clr-h--border:             var(--clr-brand--secondary);
 
-    --clr-footerbg:              oklch(from var(--clr-brand--tertiary) calc(l * .8) calc(c * 0.5) h);
+    //--clr-footerbg:              oklch(from var(--clr-brand--tertiary) calc(l * .8) calc(c * 0.5) h);
+    --clr-footerbg:              var(--clr-bw-050);
+
     /* fontfaces */
     --ff:                        'Roboto';
     --ff-condensed:              'Roboto';
@@ -91,6 +93,8 @@
     --ff-symbol:                 'Symbols';
     --clr-headerbg:              transparent;
     --clr-logobg:                transparent;
+    --clr-mnubg:                 var(--clr-bw-060);
+    --clr-mnumobilebg:           var(--clr-bw-070);
   }
 
 
@@ -113,9 +117,6 @@
       --clr-background:            var(--clr-bw-030);
       --clr-background-accent:     var(--clr-bw-070);
       --clr-background-brandcolor: oklch(from var(--clr-brand--tertiary) calc(l * .8) calc(c * 0.5) h);
-
-      --clr-footerbg:              oklch(from var(--clr-brand--tertiary) calc(l * .8) calc(c * 0.5) h);
-
 
     }
   }
@@ -150,13 +151,13 @@
   }
 
   .hamburger-menu svg {
-    background-color: oklch(0.2 0 0 / 0.8);
+    background-color: var(--clr-mnubg);
     overflow: clip;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
   .nav-main {
-    background: oklch(0.2 0 0 / 0.8);
+    //background: oklch(0.2 0 0 / 0.8);
     overflow: clip;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
