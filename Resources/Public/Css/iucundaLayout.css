@@ -68,7 +68,8 @@
     --clr-background-accent: var(--clr-bw-070);
     --clr-background-brandcolor: var(--clr-brand--tertiary);
     --clr-h--border: var(--clr-brand--secondary);
-    --clr-footerbg: var(--clr-bw-050);
+    --clr--footer-text: var(--clr-bw-100);
+    --clr-footerbg: var(--clr-bw-000);
     /* fontfaces */
     --ff: "Roboto";
     --ff-condensed: "Roboto";
@@ -97,6 +98,8 @@
       --clr-h: var(--clr-bw-090);
       --clr-background: var(--clr-bw-030);
       --clr-background-accent: var(--clr-bw-070);
+      --clr--footer-text: var(--clr-bw-100);
+      --clr-footerbg: var(--clr-bw-000);
     }
   }
   main {
@@ -162,6 +165,9 @@
   .navsubmenu--card:nth-child(3) {
     --_card--btnbg-color: var(--clr-brand--tertiary);
     --_card--btn-color: var(--clr-text);
+  }
+  .footer--content img {
+    max-width: 200px;
   }
 }
 
