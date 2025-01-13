@@ -68,7 +68,7 @@
     --clr-background-accent: var(--clr-bw-070);
     --clr-background-brandcolor: var(--clr-brand--tertiary);
     --clr-h--border: var(--clr-brand--secondary);
-    --clr--footer-text: var(--clr-bw-100);
+    --clr-footer-text: var(--clr-bw-100);
     --clr-footerbg: var(--clr-bw-000);
     /* fontfaces */
     --ff: "Roboto";
@@ -98,7 +98,7 @@
       --clr-h: var(--clr-bw-090);
       --clr-background: var(--clr-bw-030);
       --clr-background-accent: var(--clr-bw-070);
-      --clr--footer-text: var(--clr-bw-100);
+      --clr-footer-text: var(--clr-bw-100);
       --clr-footerbg: var(--clr-bw-000);
     }
   }
