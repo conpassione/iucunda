@@ -1,5 +1,5 @@
 name: conpassione/iucunda
-label: Test
+label: Iucundacanis
 dependencies:
   - conpassione/cpdevsite
   - typo3/form
